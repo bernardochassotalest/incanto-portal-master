@@ -1,0 +1,5 @@
+import _ from 'lodash'
+import mongoose from 'mongoose'
+import schema from 'app/models/mongodb/vindi/bills/schema'
+
+export default mongoose.model('sales_vindi_bills', schema, 'c_sales_vindi_bills')

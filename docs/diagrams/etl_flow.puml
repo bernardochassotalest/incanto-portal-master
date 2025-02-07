@@ -1,0 +1,20 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Fluxo de Processamento ETL
+
+Component(file_receiver, "File Receiver", "Component", "Recebe e valida arquivos")
+Component(parser, "Parser", "Component", "Parse dos registros")
+Component(validator, "Validator", "Component", "Validação de dados")
+Component(transformer, "Transformer", "Component", "Transformação de dados")
+Component(persister, "Persister", "Component", "Persistência no banco")
+
+Database(mongodb, "MongoDB", "Database", "Armazenamento de dados processados")
+
+Rel(file_receiver, parser, "Envia arquivo")
+Rel(parser, validator, "Envia registros")
+Rel(validator, transformer, "Dados validados")
+Rel(transformer, persister, "Dados transformados")
+Rel(persister, mongodb, "Salva dados")
+
+@enduml

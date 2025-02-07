@@ -1,0 +1,45 @@
+version: "3.7"
+
+networks:
+  net_portal:
+
+services:
+  rabbit:
+    image: rabbitmq:3.8.3-management
+    restart: always
+    volumes:
+      - "~/docker/rabbitmq/data:/var/lib/rabbitmq"
+      # - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+      # - ./rabbitmq.sh:/usr/local/bin/rabbitmq-custom.sh
+    #command: 
+      # - rabbitmq-custom.sh
+    ports:
+      - 5672:5672
+      - 15672:15672
+    healthcheck:
+        test: ["CMD", "curl", "-f", "http://localhost:15685"]
+        interval: 30s
+        timeout: 10s
+        retries: 5
+    networks:
+      - net_portal
+
+  mailcatcher:
+    image: dockage/mailcatcher:0.7.1
+    restart: on-failure:10
+    ports:
+      - 1080:1080
+      - 1025:1025
+    networks:
+      - net_portal
+
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=Skill777
+    volumes:
+      - ~/docker/postgres/data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - net_portal

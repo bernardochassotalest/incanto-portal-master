@@ -1,0 +1,29 @@
+{
+  "name": "etl",
+  "version": "1.0.35",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development DEBUG=incanto* nodemon src/index.js",
+    "build": "sucrase ./src -d ./dist --transforms imports ;",
+    "prod": "yarn build && node ./dist/index.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.6.0",
+    "async": "^3.2.0",
+    "axios": "^0.21.1",
+    "currency.js": "^2.0.3",
+    "date-fns": "^2.16.1",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.13",
+    "pg": "^8.4.2",
+    "sequelize": "^6.3.5",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "sucrase": "^3.16.0"
+  }
+}

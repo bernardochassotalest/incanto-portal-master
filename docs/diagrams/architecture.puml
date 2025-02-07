@@ -1,0 +1,33 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title Arquitetura do Sistema Incanto
+
+Person(client, "Cliente", "Usuário do sistema")
+
+System_Boundary(c1, "Sistema Incanto") {
+    Container(web, "Frontend Web", "React", "Interface do usuário")
+    
+    Container(api, "API Server", "Node.js, Express", "Backend principal")
+    
+    Container(etl, "ETL System", "Node.js", "Processamento de dados")
+    
+    Container(jobs, "Job System", "Node.js", "Processamento em background")
+    
+    ContainerDb(mongodb, "MongoDB", "MongoDB", "Dados processados")
+    
+    ContainerDb(postgres, "PostgreSQL", "PostgreSQL", "Dados transacionais")
+}
+
+System_Ext(cielo, "Cielo", "Sistema de pagamentos")
+
+Rel(client, web, "Acessa", "HTTPS")
+Rel(web, api, "Usa", "HTTPS/REST")
+Rel(api, mongodb, "Lê/Escreve")
+Rel(api, postgres, "Lê/Escreve")
+Rel(etl, mongodb, "Processa e armazena")
+Rel(etl, cielo, "Recebe arquivos")
+Rel(jobs, mongodb, "Processa")
+Rel(jobs, postgres, "Atualiza")
+
+@enduml

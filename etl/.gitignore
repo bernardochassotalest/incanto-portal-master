@@ -1,0 +1,17 @@
+node_modules/
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+src/public/apidoc
+src/public/apidoc/
+src/public/apidoc/*
+*.log
+dist/
+.idea/
+*.csv
+*.rest
+package-lock.json
+\.vscode/launch\.json
+**/sqlite
+sqlite

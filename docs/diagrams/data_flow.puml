@@ -1,0 +1,53 @@
+@startuml
+!theme plain
+skinparam componentStyle uml2
+skinparam backgroundColor white
+skinparam ArrowColor black
+skinparam ComponentBackgroundColor lightblue
+
+title Fluxo de Dados - Sistema Incanto
+
+participant "Cielo" as cielo
+participant "ETL" as etl
+participant "MongoDB" as mongo
+participant "API Server" as api
+participant "Frontend" as web
+participant "Usuário" as user
+
+== Processamento de Arquivo ==
+cielo -> etl: Envio de arquivo CIELO03
+activate etl
+etl -> etl: Validação inicial
+etl -> etl: Parse dos registros
+etl -> etl: Transformação
+etl -> mongo: Salva dados processados
+deactivate etl
+
+== Consulta de Dados ==
+user -> web: Acessa dashboard
+activate web
+web -> api: Requisita dados
+activate api
+api -> mongo: Consulta transações
+mongo --> api: Retorna dados
+api -> api: Processa/Agrega
+api --> web: Retorna JSON
+deactivate api
+web -> web: Renderiza dados
+web --> user: Exibe dashboard
+deactivate web
+
+== Processamento Background ==
+box "Job System" #LightGreen
+participant "Scheduler" as scheduler
+participant "Processor" as processor
+end box
+
+scheduler -> processor: Inicia job
+activate processor
+processor -> mongo: Lê transações
+processor -> processor: Processa dados
+processor -> mongo: Atualiza status
+deactivate processor
+
+@enduml

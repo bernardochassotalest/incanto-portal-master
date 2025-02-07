@@ -1,0 +1,80 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+' Definição de cores personalizadas
+!define FRONTEND_COLOR #1E90FF
+!define BACKEND_COLOR #32CD32
+!define DATABASE_COLOR #FF8C00
+!define ETL_COLOR #9370DB
+!define EXTERNAL_COLOR #A9A9A9
+
+skinparam componentStyle uml2
+
+title Sistema Incanto - Arquitetura Detalhada
+
+' Atores externos
+Person(user, "Usuário", "Usuário do sistema")
+Person(admin, "Administrador", "Administrador do sistema")
+System_Ext(cielo, "Cielo", "Sistema de pagamentos")
+System_Ext(email_system, "Sistema de Email", "Servidor SMTP")
+
+' Boundary do Sistema Incanto
+System_Boundary(incanto, "Sistema Incanto") {
+    ' Frontend
+    Container(web_app, "Aplicação Web", "React, JavaScript", "Interface do usuário", $bgColor=FRONTEND_COLOR)
+    
+    ' Backend API
+    Container(api_server, "API Server", "Node.js, Express", "Servidor principal de APIs", $bgColor=BACKEND_COLOR)
+    
+    ' Sistema ETL
+    Container(etl_system, "Sistema ETL", "Node.js", "Processamento de arquivos Cielo", $bgColor=ETL_COLOR) {
+        Component(file_receiver, "Receptor de Arquivos", "Validação inicial")
+        Component(parser, "Parser", "Processamento de registros")
+        Component(data_transformer, "Transformador", "Transformação de dados")
+    }
+    
+    ' Sistema de Jobs
+    Container(job_system, "Sistema de Jobs", "Node.js, Cron", "Processamento em background", $bgColor=BACKEND_COLOR) {
+        Component(scheduler, "Agendador", "Gerenciamento de tarefas")
+        Component(processor, "Processador", "Execução de tarefas")
+        Component(monitor, "Monitor", "Monitoramento de jobs")
+    }
+    
+    ' Bancos de dados
+    ContainerDb(mongodb, "MongoDB", "MongoDB 4.x", "Dados processados, transações", $bgColor=DATABASE_COLOR)
+    ContainerDb(postgres, "PostgreSQL", "PostgreSQL 12", "Dados do sistema, usuários", $bgColor=DATABASE_COLOR)
+    
+    ' Cache
+    ContainerDb(redis, "Redis", "Redis 6.x", "Cache, filas, sessões", $bgColor=DATABASE_COLOR)
+}
+
+' Relacionamentos - Frontend
+Rel(user, web_app, "Acessa", "HTTPS")
+Rel(admin, web_app, "Administra", "HTTPS")
+Rel(web_app, api_server, "Consome APIs", "HTTPS/REST")
+
+' Relacionamentos - Backend
+Rel(api_server, mongodb, "Lê/Escreve", "MongoDB Driver")
+Rel(api_server, postgres, "Lê/Escreve", "Sequelize ORM")
+Rel(api_server, redis, "Cache/Sessão", "Redis Client")
+Rel(api_server, email_system, "Envia emails", "SMTP")
+
+' Relacionamentos - ETL
+Rel(cielo, file_receiver, "Envia arquivos", "SFTP")
+Rel(file_receiver, parser, "Envia dados", "Stream")
+Rel(parser, data_transformer, "Dados parseados", "Stream")
+Rel(data_transformer, mongodb, "Salva dados", "MongoDB Driver")
+
+' Relacionamentos - Jobs
+Rel(scheduler, processor, "Agenda", "Internal")
+Rel(processor, mongodb, "Processa dados", "MongoDB Driver")
+Rel(processor, postgres, "Atualiza status", "Sequelize ORM")
+Rel(monitor, redis, "Status dos jobs", "Redis Client")
+
+' Layout hints
+Lay_R(user, admin)
+Lay_R(mongodb, postgres)
+Lay_R(file_receiver, parser)
+Lay_R(parser, data_transformer)
+
+@enduml

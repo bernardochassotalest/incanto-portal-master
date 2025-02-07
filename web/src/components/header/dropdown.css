@@ -1,0 +1,10 @@
+button {
+  border: none;
+  background: transparent;
+}
+[data-reach-menu-list], [data-reach-menu-items] {
+  padding: 0 !important;
+}
+[data-reach-menu-item] {
+  padding: 10px 20px !important;
+}

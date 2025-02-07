@@ -1,0 +1,2126 @@
+_type: export
+__export_format: 4
+__export_date: 2021-04-15T19:10:55.664Z
+__export_source: insomnia.desktop.app:v2020.3.3
+resources:
+  - _id: req_a425fb303e554226bb45036af93e4271
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1605872840342
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600983162081.8125
+    method: POST
+    modified: 1605872847987
+    name: pooling
+    parameters: []
+    parentId: fld_fa1a21b04c25458ebc32e3781f3fde53
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/multiclubes/pooling"
+    _type: request
+  - _id: fld_fa1a21b04c25458ebc32e3781f3fde53
+    created: 1605872836229
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1605872836230
+    modified: 1605872836229
+    name: multiclubes
+    parentId: fld_63e861ec7a774beaa4e4e99ad1898a4d
+    _type: request_group
+  - _id: fld_63e861ec7a774beaa4e4e99ad1898a4d
+    created: 1601033982654
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1601033982654
+    modified: 1601033982654
+    name: jobs
+    parentId: fld_9a0d6d10723b475794e6ed6351b7c13d
+    _type: request_group
+  - _id: fld_9a0d6d10723b475794e6ed6351b7c13d
+    created: 1600966167603
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600966167603
+    modified: 1600966167603
+    name: incanto
+    parentId: wrk_2be8bc08eef145479bec05d45a4a19f2
+    _type: request_group
+  - _id: wrk_2be8bc08eef145479bec05d45a4a19f2
+    created: 1600966162237
+    description: ""
+    modified: 1601572152117
+    name: skill-incanto
+    parentId: null
+    scope: null
+    _type: workspace
+  - _id: req_334897fc53e644d3ac30a9d737daf2a6
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1605702164669
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600983162083.375
+    method: POST
+    modified: 1605702427983
+    name: pooling
+    parameters: []
+    parentId: fld_1a637c9aefb446769d18e8482c008fd6
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/sap-b1/pooling"
+    _type: request
+  - _id: fld_1a637c9aefb446769d18e8482c008fd6
+    created: 1605702158546
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1605702158546
+    modified: 1605702158546
+    name: sap-b1
+    parentId: fld_63e861ec7a774beaa4e4e99ad1898a4d
+    _type: request_group
+  - _id: req_2b262cbc814a431281138a7bdb63f761
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1605871761831
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600983162136.5
+    method: POST
+    modified: 1605871766338
+    name: pooling
+    parameters: []
+    parentId: fld_ddc99fba162a48889d1c9d66735d6cb4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/newc/pooling"
+    _type: request
+  - _id: fld_ddc99fba162a48889d1c9d66735d6cb4
+    created: 1602606254828
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1602606254828
+    modified: 1602606254828
+    name: newc
+    parentId: fld_63e861ec7a774beaa4e4e99ad1898a4d
+    _type: request_group
+  - _id: req_7e707ffef5b74ef1b1bfab689a40cadd
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1602606259237
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600983162086.5
+    method: POST
+    modified: 1602606264388
+    name: products
+    parameters: []
+    parentId: fld_ddc99fba162a48889d1c9d66735d6cb4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/newc/products"
+    _type: request
+  - _id: req_11c88abe6b64437ba3cc88dbdbb4680c
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1602606383709
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600983162080.25
+    method: POST
+    modified: 1602606389067
+    name: clients
+    parameters: []
+    parentId: fld_ddc99fba162a48889d1c9d66735d6cb4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/newc/clients"
+    _type: request
+  - _id: req_365dcb1e5bac4419a6e171cf51be25f3
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1602606397170
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600983162077.125
+    method: POST
+    modified: 1602606404300
+    name: transactions
+    parameters: []
+    parentId: fld_ddc99fba162a48889d1c9d66735d6cb4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/newc/transactions"
+    _type: request
+  - _id: req_3b10d93ea4b44d8dabf297e6c58e4db3
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: ""
+    created: 1617803806197
+    description: ""
+    headers:
+      - id: pair_ba9e7b4a83c143518da74dbd689e4261
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1601146992618.4375
+    method: POST
+    modified: 1617803820049
+    name: creditCardBalances
+    parameters: []
+    parentId: fld_7c6327febfeb4f5d9f1bac0235de5733
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/skill/load-data/credit-card-balances"
+    _type: request
+  - _id: fld_7c6327febfeb4f5d9f1bac0235de5733
+    created: 1617803790099
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1617803790099
+    modified: 1617803795040
+    name: load-data
+    parentId: fld_779873c1efa94c9da32a111d9a7f08f7
+    _type: request_group
+  - _id: fld_779873c1efa94c9da32a111d9a7f08f7
+    created: 1601636514137
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1601636514137
+    modified: 1601636514137
+    name: skill
+    parentId: fld_63e861ec7a774beaa4e4e99ad1898a4d
+    _type: request_group
+  - _id: req_55f93382bcad4d87bb972bdc526f97b9
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "c1ca69a3-d68d-4c67-8d33-ff48c905d2de"
+        }
+    created: 1610561197703
+    description: ""
+    headers:
+      - id: pair_ba9e7b4a83c143518da74dbd689e4261
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1601410586003.125
+    method: POST
+    modified: 1618241799549
+    name: process
+    parameters: []
+    parentId: fld_83e2ca4ade5c48fca1a54edf590346ed
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/skill/reports/process"
+    _type: request
+  - _id: fld_83e2ca4ade5c48fca1a54edf590346ed
+    created: 1610561193224
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1610561193224
+    modified: 1610561193224
+    name: reports
+    parentId: fld_779873c1efa94c9da32a111d9a7f08f7
+    _type: request_group
+  - _id: req_794094bb6f394638a5ec54280e520adc
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: ""
+    created: 1605617784226
+    description: ""
+    headers:
+      - id: pair_ba9e7b4a83c143518da74dbd689e4261
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1601184648816.25
+    method: POST
+    modified: 1607603039368
+    name: generate
+    parameters: []
+    parentId: fld_4a9167a61e0945b5b0fd7dfee812b321
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/skill/accounting/generate"
+    _type: request
+  - _id: fld_4a9167a61e0945b5b0fd7dfee812b321
+    created: 1605617779578
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1605617779578
+    modified: 1605617779578
+    name: accounting
+    parentId: fld_779873c1efa94c9da32a111d9a7f08f7
+    _type: request_group
+  - _id: req_82e73fdcfe6e43d4bf88eac15c876379
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: '{"refDate": "2021-03-01"}'
+    created: 1605705193320
+    description: ""
+    headers:
+      - id: pair_ba9e7b4a83c143518da74dbd689e4261
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1601109336420.625
+    method: POST
+    modified: 1616442573133
+    name: send
+    parameters: []
+    parentId: fld_4a9167a61e0945b5b0fd7dfee812b321
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/skill/accounting/send"
+    _type: request
+  - _id: req_3a64de6e84fa4d12915f5c2196b6b4f8
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: ""
+    created: 1606995816468
+    description: ""
+    headers:
+      - id: pair_ba9e7b4a83c143518da74dbd689e4261
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1601109336370.625
+    method: POST
+    modified: 1606995830543
+    name: " notification"
+    parameters: []
+    parentId: fld_4a9167a61e0945b5b0fd7dfee812b321
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/skill/accounting/notification"
+    _type: request
+  - _id: req_b68fb39e9db6439b94388ab70b8fd9bb
+    authentication: {}
+    body:
+      mimeType: multipart/form-data
+      params:
+        - description: ""
+          disabled: false
+          fileName: /home/claudinei/Downloads/COB_341_400_2938_31065-9_2020123000.RET
+          id: pair_dd381315e84e41f69ada74a87342d449
+          name: files
+          type: file
+          value: ""
+    created: 1601636523240
+    description: ""
+    headers:
+      - id: pair_ba9e7b4a83c143518da74dbd689e4261
+        name: Content-Type
+        value: multipart/form-data
+    isPrivate: false
+    metaSortKey: -1601636523240
+    method: POST
+    modified: 1609790002461
+    name: upload
+    parameters: []
+    parentId: fld_d9d34593aa8c4972b416d52d4ff81ac4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/skill/finance-files/upload"
+    _type: request
+  - _id: fld_d9d34593aa8c4972b416d52d4ff81ac4
+    created: 1601638950526
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1603628365052
+    modified: 1616519732410
+    name: finance-files
+    parentId: fld_779873c1efa94c9da32a111d9a7f08f7
+    _type: request_group
+  - _id: req_b9e05c4aca37429d8c14ed10a7d0ac68
+    authentication: {}
+    body:
+      mimeType: multipart/form-data
+      params: []
+    created: 1605703891135
+    description: ""
+    headers:
+      - id: pair_ba9e7b4a83c143518da74dbd689e4261
+        name: Content-Type
+        value: multipart/form-data
+    isPrivate: false
+    metaSortKey: -1601636523215
+    method: POST
+    modified: 1605703898939
+    name: folder
+    parameters: []
+    parentId: fld_d9d34593aa8c4972b416d52d4ff81ac4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/skill/finance-files/folder"
+    _type: request
+  - _id: req_edab9c61f40a470787fd9a282000e348
+    authentication: {}
+    body:
+      mimeType: multipart/form-data
+      params: []
+    created: 1601638945664
+    description: ""
+    headers:
+      - id: pair_ba9e7b4a83c143518da74dbd689e4261
+        name: Content-Type
+        value: multipart/form-data
+    isPrivate: false
+    metaSortKey: -1601636523190
+    method: POST
+    modified: 1601638971303
+    name: process
+    parameters: []
+    parentId: fld_d9d34593aa8c4972b416d52d4ff81ac4
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/skill/finance-files/process"
+    _type: request
+  - _id: req_56e011f304bf41e08ee74be1a264f0bf
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "test",
+        	"email": "test@test.com",
+        	"subject": "test",
+        	"data": {}
+        }
+    created: 1601034024025
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1601034024025
+    method: POST
+    modified: 1601473040737
+    name: send-mail
+    parameters: []
+    parentId: fld_67ed4ac1d3b740c7ab4d5052e3ffc75f
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/email/send"
+    _type: request
+  - _id: fld_67ed4ac1d3b740c7ab4d5052e3ffc75f
+    created: 1601473038067
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1601473038067
+    modified: 1601473038067
+    name: commons
+    parentId: fld_63e861ec7a774beaa4e4e99ad1898a4d
+    _type: request_group
+  - _id: req_746e287408e9411fa7388e5432419711
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1605785674293
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600983162149
+    method: POST
+    modified: 1605785679589
+    name: pooling
+    parameters: []
+    parentId: fld_d04ae935966d4b2d8315b8b52a377263
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/vindi/pooling"
+    _type: request
+  - _id: fld_d04ae935966d4b2d8315b8b52a377263
+    created: 1601409164756
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1601409164756
+    modified: 1601409164756
+    name: vindi
+    parentId: fld_63e861ec7a774beaa4e4e99ad1898a4d
+    _type: request_group
+  - _id: req_6071fd6a9240423a8e4d4efe484fb177
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1601485147008
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600983162099
+    method: POST
+    modified: 1601485159061
+    name: products
+    parameters: []
+    parentId: fld_d04ae935966d4b2d8315b8b52a377263
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/vindi/products"
+    _type: request
+  - _id: req_9a24696da71b4244a739407ab257a3a3
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1601485153432
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600983162074
+    method: POST
+    modified: 1601485162616
+    name: customers
+    parameters: []
+    parentId: fld_d04ae935966d4b2d8315b8b52a377263
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/vindi/customers"
+    _type: request
+  - _id: req_bc5e16e8840c46bab0c9faadad907d63
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1601409171811
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600983162049
+    method: POST
+    modified: 1601409199663
+    name: bills
+    parameters: []
+    parentId: fld_d04ae935966d4b2d8315b8b52a377263
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/vindi/bills"
+    _type: request
+  - _id: req_de52c27b6d9047ecbb067d81d1d9edfb
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1601582990132
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600974685053
+    method: POST
+    modified: 1601582992345
+    name: transactions
+    parameters: []
+    parentId: fld_d04ae935966d4b2d8315b8b52a377263
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/vindi/transactions"
+    _type: request
+  - _id: req_1b59f438368547a09599dad206a36dbb
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1601666176917
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600972565804
+    method: POST
+    modified: 1601666180011
+    name: issues
+    parameters: []
+    parentId: fld_d04ae935966d4b2d8315b8b52a377263
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/vindi/issues"
+    _type: request
+  - _id: req_3b3802ab09a1495c91ec8db4fb266377
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1603304863824
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600970976367.25
+    method: POST
+    modified: 1603304872010
+    name: payments
+    parameters: []
+    parentId: fld_d04ae935966d4b2d8315b8b52a377263
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/vindi/payments"
+    _type: request
+  - _id: req_fb319294326a417488ae770b4ee5fd1d
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {  
+          "event":{  
+            "type":"subscription_created",
+            "created_at":"2014-10-02T22:35:57.477-03:00",
+            "data":{  
+              "subscription": {
+        					"id" : 10001156,
+        					"status" : "canceled",
+        					"start_at" : "2020-04-02T00:00:00.000-03:00",
+        					"end_at" : "2020-04-15T07:13:44.000-03:00",
+        					"next_billing_at" : null,
+        					"overdue_since" : null,
+        					"code" : "5764342",
+        					"cancel_at" : "2020-04-15T07:13:44.000-03:00",
+        					"interval" : "months",
+        					"interval_count" : 1,
+        					"billing_trigger_type" : "beginning_of_period",
+        					"billing_trigger_day" : 0,
+        					"billing_cycles" : null,
+        					"installments" : 1,
+        					"created_at" : "2020-04-02T09:35:21.000-03:00",
+        					"updated_at" : "2020-04-15T07:13:44.000-03:00",
+        					"customer" : {
+        						"id" : 13112785,
+        						"name" : "LEONARDO PIRES CIANCIO",
+        						"email" : "leonardo.ciancio@hotmail.com",
+        						"code" : "118764"
+        				}
+              }
+            }
+          }
+        }
+    created: 1601662114237
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600970446555
+    method: POST
+    modified: 1601663528056
+    name: events
+    parameters:
+      - description: ""
+        id: pair_8c42ae3f059d4dc6a457a15f979962bf
+        name: auth
+        value: bd580d86c2453fac1bde2eff9d7f66f9
+    parentId: fld_d04ae935966d4b2d8315b8b52a377263
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/vindi/events"
+    _type: request
+  - _id: req_5c2fe907ed9a45488f2ba1a5c270426b
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {  
+          "refDate":"2020-11-18"
+        }
+    created: 1605788338368
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600968327306
+    method: POST
+    modified: 1605815412145
+    name: accounting
+    parameters:
+      - description: ""
+        id: pair_8c42ae3f059d4dc6a457a15f979962bf
+        name: auth
+        value: bd580d86c2453fac1bde2eff9d7f66f9
+    parentId: fld_d04ae935966d4b2d8315b8b52a377263
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/vindi/accounting"
+    _type: request
+  - _id: req_24f854f860504b888a2186e93ca88f4d
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1612458270436
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600968327256
+    method: POST
+    modified: 1612458278202
+    name: export-batches
+    parameters: []
+    parentId: fld_d04ae935966d4b2d8315b8b52a377263
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/vindi/export-batches"
+    _type: request
+  - _id: req_723926d8ac464ac586f437a98eff2b86
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: "{}"
+    created: 1618251524018
+    description: ""
+    headers:
+      - id: pair_bab02e24a8f7474d9e0f3d46ec41c2b1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600967267681.5
+    method: POST
+    modified: 1618251528873
+    name: import-batches
+    parameters: []
+    parentId: fld_d04ae935966d4b2d8315b8b52a377263
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_jobs }}/vindi/import-batches"
+    _type: request
+  - _id: req_aa2d1616d4054745a7b540e3422a43f2
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: ""
+    created: 1610458410125
+    description: ""
+    headers:
+      - id: pair_6aaf2b86996540058fc3495a4962ae8f
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600966208107
+    method: POST
+    modified: 1618512806270
+    name: login
+    parameters: []
+    parentId: fld_34624c1534224ff8ae5307b823a95db9
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/auth/login"
+    _type: request
+  - _id: fld_34624c1534224ff8ae5307b823a95db9
+    created: 1610722936050
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1610722951302
+    modified: 1610722960369
+    name: auth
+    parentId: fld_e90591692afd4a998d60bb70305ec05a
+    _type: request_group
+  - _id: fld_e90591692afd4a998d60bb70305ec05a
+    created: 1601033977266
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1601033977266
+    modified: 1601033977266
+    name: server
+    parentId: fld_9a0d6d10723b475794e6ed6351b7c13d
+    _type: request_group
+  - _id: req_e77b20eb07314f7289300edcd89b70e3
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"typeId": "detalhes-lcm",
+        	"startDate": "2020-12-01",
+        	"endDate": "2021-01-31"
+        }
+    created: 1610727239943
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+      - id: pair_6a69415e20314394b61f6208f32126f9
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1610726860652
+    method: POST
+    modified: 1611072503254
+    name: create
+    parameters: []
+    parentId: fld_d24140011b454c09ac3090f95d327afd
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/report-requests/create"
+    _type: request
+  - _id: fld_d24140011b454c09ac3090f95d327afd
+    created: 1610722951252
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1610722951252
+    modified: 1610722951252
+    name: report-requests
+    parentId: fld_e90591692afd4a998d60bb70305ec05a
+    _type: request_group
+  - _id: req_188aca22d33a45f88c4699a7196b1bbc
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"typeId": "historico-faturas",
+        	"filters": {
+        		"from": "2021-01-01",
+        		"to": "2021-01-31"
+        	}
+        }
+    created: 1610732386912
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+      - id: pair_6a69415e20314394b61f6208f32126f9
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1610726860627
+    method: GET
+    modified: 1610732427307
+    name: export-xlsx
+    parameters:
+      - description: ""
+        id: pair_56876bed0d3b413ba9d7743bbb1f533b
+        name: id
+        value: cf785fe8-5146-463a-931f-613a3f89e91f
+    parentId: fld_d24140011b454c09ac3090f95d327afd
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/report-requests/export-xlsx"
+    _type: request
+  - _id: req_ffb80ef106a6468b9cd3cf47c3cc3aea
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"typeId": "historico-faturas",
+        	"filters": {
+        		"from": "2021-01-01",
+        		"to": "2021-01-31"
+        	}
+        }
+    created: 1612210706865
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+      - id: pair_6a69415e20314394b61f6208f32126f9
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1610726860614.5
+    method: GET
+    modified: 1612210712191
+    name: export-pdf
+    parameters:
+      - description: ""
+        id: pair_56876bed0d3b413ba9d7743bbb1f533b
+        name: id
+        value: cf785fe8-5146-463a-931f-613a3f89e91f
+    parentId: fld_d24140011b454c09ac3090f95d327afd
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/report-requests/export-pdf"
+    _type: request
+  - _id: req_e77bb50039b04f64827a2a3ef09bbfc7
+    authentication: {}
+    body: {}
+    created: 1610726860602
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1610726860602
+    method: GET
+    modified: 1610727016765
+    name: finding
+    parameters:
+      - description: ""
+        disabled: true
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: term
+        value: fatu
+    parentId: fld_d24140011b454c09ac3090f95d327afd
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/report-requests/list-report-types"
+    _type: request
+  - _id: req_d9be40664f354abba57d84298b072832
+    authentication: {}
+    body: {}
+    created: 1610727057687
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609348153696
+    method: GET
+    modified: 1610727176028
+    name: list
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: id
+        value: "1"
+    parentId: fld_d24140011b454c09ac3090f95d327afd
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/report-requests/load"
+    _type: request
+  - _id: req_7209bcbeee354e78b52bd509a8a76581
+    authentication: {}
+    body: {}
+    created: 1610727060229
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1608658800243
+    method: GET
+    modified: 1610727063224
+    name: load
+    parameters:
+      - description: ""
+        disabled: true
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: term
+        value: fatu
+    parentId: fld_d24140011b454c09ac3090f95d327afd
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/report-requests/list"
+    _type: request
+  - _id: req_7a754f05f5eb484482a2c2b19fe8fb88
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "81975e5cc8d156c8c844c9ade0ee4c30",
+        	"notes": "Débito Automático do Multiclubes"
+        }
+    created: 1600966208057
+    description: ""
+    headers:
+      - description: ""
+        id: pair_4c2497671c094a2083b97140583b5923
+        name: Authorization
+        value: "{{ token }}"
+      - id: pair_e446dbda456b4f84b17ade12628d934f
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600966208057
+    method: POST
+    modified: 1618408284994
+    name: create
+    parameters: []
+    parentId: fld_37dcf88915ee4e698cb5c3077fe96f08
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/dashboards/conciliation-create "
+    _type: request
+  - _id: fld_37dcf88915ee4e698cb5c3077fe96f08
+    created: 1610722912262
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600966208157
+    modified: 1610722921421
+    name: conciliation-items
+    parentId: fld_e90591692afd4a998d60bb70305ec05a
+    _type: request_group
+  - _id: req_6899e8309e954954aa7f396babaec725
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"ids": [
+        		"f4c761c3fb5d236183cc33af5c981651",
+        		"53acd638f9f0dbbb960fd5ef38575345"
+        	],
+        	"notes": "Diferença em data de captura entre Cielo x Multiclubes"
+        }
+    created: 1611149461287
+    description: ""
+    headers:
+      - description: ""
+        id: pair_4c2497671c094a2083b97140583b5923
+        name: Authorization
+        value: "{{ token }}"
+      - id: pair_e446dbda456b4f84b17ade12628d934f
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600575593137
+    method: POST
+    modified: 1612378122598
+    name: join
+    parameters: []
+    parentId: fld_37dcf88915ee4e698cb5c3077fe96f08
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/conciliation-items/join "
+    _type: request
+  - _id: req_6408c33017564a2fa512711ae1c7855d
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: ""
+    created: 1612265572217
+    description: ""
+    headers:
+      - description: ""
+        id: pair_4c2497671c094a2083b97140583b5923
+        name: Authorization
+        value: "{{ token }}"
+      - id: pair_e446dbda456b4f84b17ade12628d934f
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600380285677
+    method: GET
+    modified: 1612265591312
+    name: list-rules
+    parameters: []
+    parentId: fld_37dcf88915ee4e698cb5c3077fe96f08
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/conciliation-items/list-rules"
+    _type: request
+  - _id: req_6416846e06b94e0d848eb3d4a8cba66e
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: ""
+    created: 1612266075654
+    description: ""
+    headers:
+      - description: ""
+        id: pair_4c2497671c094a2083b97140583b5923
+        name: Authorization
+        value: "{{ token }}"
+      - id: pair_e446dbda456b4f84b17ade12628d934f
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1600282631947
+    method: GET
+    modified: 1612377888276
+    name: list-transactions
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_3de2886eb304468b8720907f138f6b6c
+        name: rule
+        value: slip_capture
+      - description: ""
+        id: pair_5ba2c43b9e7044048d974f4ca3704c1b
+        name: startDate
+        value: 2021-01-30
+      - description: ""
+        id: pair_71320a9de77a4fa28dcd48224ef11c1a
+        name: endDate
+        value: 2021-01-31
+    parentId: fld_37dcf88915ee4e698cb5c3077fe96f08
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/conciliation-items/list-transactions"
+    _type: request
+  - _id: req_6bdab13ee16e4b669a778fd8aef0f089
+    authentication: {}
+    body: {}
+    created: 1611345604225
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1610037507149
+    method: POST
+    modified: 1615484538768
+    name: accounting
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: startDate
+        value: 2021-01-01
+      - description: ""
+        disabled: false
+        id: pair_46877be0a3ca4a71892e37592406951a
+        name: endDate
+        value: 2021-02-25
+      - description: ""
+        disabled: true
+        id: pair_9afbd4dacfc84ef4a3f3503d2c435021
+        name: tags
+        value: sep,multiclubes
+    parentId: fld_e463f2be130a4ae3926ee298f49a0cec
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/dashboards/load"
+    _type: request
+  - _id: fld_e463f2be130a4ae3926ee298f49a0cec
+    created: 1611345586644
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600966208107
+    modified: 1611345592744
+    name: dashboards
+    parentId: fld_e90591692afd4a998d60bb70305ec05a
+    _type: request_group
+  - _id: req_2ade6815495b4fcf9f77428ff21e8c21
+    authentication: {}
+    body: {}
+    created: 1612436647880
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609692830422.5
+    method: GET
+    modified: 1612536639587
+    name: list-invoiced
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: startDate
+        value: 2021-01-01
+      - description: ""
+        disabled: false
+        id: pair_46877be0a3ca4a71892e37592406951a
+        name: endDate
+        value: 2021-01-31
+      - description: ""
+        disabled: true
+        id: pair_0a9c99d645c84755ac8ec776a848cc6d
+        name: offset
+        value: "13"
+    parentId: fld_e463f2be130a4ae3926ee298f49a0cec
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/dashboards/list-invoiced"
+    _type: request
+  - _id: req_73fe04add36e4e1885b9a8698f04ce7e
+    authentication: {}
+    body: {}
+    created: 1615996866396
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609649745831.6875
+    method: GET
+    modified: 1615997071248
+    name: list-not-captured
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: startDate
+        value: 2021-02-01
+      - description: ""
+        disabled: false
+        id: pair_46877be0a3ca4a71892e37592406951a
+        name: endDate
+        value: 2021-02-29
+      - description: ""
+        disabled: true
+        id: pair_0a9c99d645c84755ac8ec776a848cc6d
+        name: offset
+        value: "13"
+    parentId: fld_e463f2be130a4ae3926ee298f49a0cec
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/dashboards/list-not-captured"
+    _type: request
+  - _id: req_63d8627b9dea4c4bb14785bc40ddabbc
+    authentication: {}
+    body: {}
+    created: 1615473139842
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609606661240.875
+    method: GET
+    modified: 1615492563522
+    name: list-bills
+    parameters:
+      - description: ""
+        id: pair_e0346596323c4e81beb15697ca5fa744
+        name: group
+        value: rct_provisao
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: startDate
+        value: 2021-02-01
+      - description: ""
+        disabled: false
+        id: pair_46877be0a3ca4a71892e37592406951a
+        name: endDate
+        value: 2021-02-01
+      - description: ""
+        disabled: true
+        id: pair_0a9c99d645c84755ac8ec776a848cc6d
+        name: offset
+        value: "230"
+    parentId: fld_e463f2be130a4ae3926ee298f49a0cec
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/dashboards/list-bills"
+    _type: request
+  - _id: req_3a95f0dd05e64a6282eec51fbad1e9a2
+    authentication: {}
+    body: {}
+    created: 1616003816543
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609563576650.0625
+    method: GET
+    modified: 1616003901338
+    name: list-vindi
+    parameters:
+      - description: ""
+        id: pair_e0346596323c4e81beb15697ca5fa744
+        name: paymentMethod
+        value: online_bank_slip
+      - description: ""
+        id: pair_0a1e353b805e4adf82a110907e0fdc2c
+        name: status
+        value: canceled
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: startDate
+        value: 2021-03-01
+      - description: ""
+        disabled: false
+        id: pair_46877be0a3ca4a71892e37592406951a
+        name: endDate
+        value: 2021-03-31
+      - description: ""
+        disabled: true
+        id: pair_0a9c99d645c84755ac8ec776a848cc6d
+        name: offset
+        value: "230"
+    parentId: fld_e463f2be130a4ae3926ee298f49a0cec
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/dashboards/list-vindi"
+    _type: request
+  - _id: req_79282419230c47ac9b0a7bcb2f53a726
+    authentication: {}
+    body: {}
+    created: 1616007657611
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609542034354.6562
+    method: GET
+    modified: 1616007757145
+    name: list-sales
+    parameters:
+      - description: ""
+        id: pair_e0346596323c4e81beb15697ca5fa744
+        name: source
+        value: vindi
+      - description: ""
+        id: pair_0a1e353b805e4adf82a110907e0fdc2c
+        name: tag
+        value: avanti
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: startDate
+        value: 2020-05-01
+      - description: ""
+        disabled: false
+        id: pair_46877be0a3ca4a71892e37592406951a
+        name: endDate
+        value: 2020-05-31
+      - description: ""
+        disabled: true
+        id: pair_0a9c99d645c84755ac8ec776a848cc6d
+        name: offset
+        value: "230"
+    parentId: fld_e463f2be130a4ae3926ee298f49a0cec
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/dashboards/list-sales"
+    _type: request
+  - _id: req_5112bd582f77462c8e56de4f50e69bd9
+    authentication: {}
+    body: {}
+    created: 1616010828109
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609531263206.9531
+    method: GET
+    modified: 1616430542242
+    name: list-lcm-errors
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_0a1e353b805e4adf82a110907e0fdc2c
+        name: tag
+        value: multiclubes
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: startDate
+        value: 2021-03-01
+      - description: ""
+        disabled: false
+        id: pair_46877be0a3ca4a71892e37592406951a
+        name: endDate
+        value: 2021-03-31
+      - description: ""
+        disabled: true
+        id: pair_0a9c99d645c84755ac8ec776a848cc6d
+        name: offset
+        value: "230"
+    parentId: fld_e463f2be130a4ae3926ee298f49a0cec
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/dashboards/list-je-errors"
+    _type: request
+  - _id: req_72a844d83aeb4b1fb8f5cf4248486351
+    authentication: {}
+    body: {}
+    created: 1616443156199
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609525877633.1016
+    method: GET
+    modified: 1616498302389
+    name: list-messages
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_0a1e353b805e4adf82a110907e0fdc2c
+        name: messageType
+        value: sapB1Error
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: startDate
+        value: 2021-03-01
+      - description: ""
+        disabled: false
+        id: pair_46877be0a3ca4a71892e37592406951a
+        name: endDate
+        value: 2021-03-31
+      - description: ""
+        disabled: true
+        id: pair_0a9c99d645c84755ac8ec776a848cc6d
+        name: offset
+        value: "230"
+    parentId: fld_e463f2be130a4ae3926ee298f49a0cec
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/dashboards/list-messages"
+    _type: request
+  - _id: req_3ca83733f25043378540ffcda7b258d8
+    authentication: {}
+    body: {}
+    created: 1612547359870
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609520492059.25
+    method: GET
+    modified: 1612549487442
+    name: list-acquirers
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: startDate
+        value: 2021-01-20
+      - description: ""
+        disabled: false
+        id: pair_46877be0a3ca4a71892e37592406951a
+        name: endDate
+        value: 2021-01-25
+      - description: ""
+        disabled: true
+        id: pair_3ccd9bf983f740a292010621e78a7219
+        name: group
+        value: liquidacao
+      - description: ""
+        id: pair_3d48ba29a48c42f9be7baa176dbaea04
+        name: acquirer
+        value: cielo
+      - description: ""
+        disabled: false
+        id: pair_3e3c6c88222f412a92e0a8330ad81c16
+        name: group
+        value: venda
+      - description: ""
+        disabled: true
+        id: pair_6e9b41eee9a848b7a0f2821c1d4c3f3c
+        name: tags
+        value: avanti
+    parentId: fld_e463f2be130a4ae3926ee298f49a0cec
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/dashboards/list-acquirers"
+    _type: request
+  - _id: req_d14c562e8da24809a54c9926e0f52238
+    authentication: {}
+    body: {}
+    created: 1613071439878
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609434322877.625
+    method: GET
+    modified: 1613071712099
+    name: list-pdf
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: startDate
+        value: 2021-01-20
+      - description: ""
+        disabled: false
+        id: pair_46877be0a3ca4a71892e37592406951a
+        name: endDate
+        value: 2021-01-25
+      - description: ""
+        disabled: true
+        id: pair_6e9b41eee9a848b7a0f2821c1d4c3f3c
+        name: tags
+        value: avanti
+    parentId: fld_e463f2be130a4ae3926ee298f49a0cec
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/dashboards/list-pdf"
+    _type: request
+  - _id: req_2254a02573284c1e97179ef952e7bf48
+    authentication: {}
+    body: {}
+    created: 1612551515200
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609865168785.75
+    method: POST
+    modified: 1615314233972
+    name: list
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: type
+        value: period
+      - description: ""
+        disabled: false
+        id: pair_bb2b6e02d776458f903dde351ec1f63d
+        name: startDate
+        value: 2020-06-01
+      - description: ""
+        disabled: false
+        id: pair_46877be0a3ca4a71892e37592406951a
+        name: endDate
+        value: 2020-06-01
+      - description: ""
+        disabled: true
+        id: pair_7b071bb230cd4aafb78219bbdcddf6e7
+        name: term
+        value: 67736fd4-4d2b-4dae-ad41-df708b86539e
+      - description: ""
+        disabled: true
+        id: pair_48e07ddfb1cd4adf97284b0f4d6163eb
+        name: term
+        value: "98793500"
+      - description: ""
+        disabled: true
+        id: pair_fed70fbe7e5940e7a9c3c746b5892e60
+        name: term
+        value: "345832"
+      - description: ""
+        disabled: true
+        id: pair_3b4fdc467eb248b6986027f190d08a33
+        name: term
+        value: "101616144"
+    parentId: fld_27d0e33927544e11823ae060d4760943
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/sales/list"
+    _type: request
+  - _id: fld_27d0e33927544e11823ae060d4760943
+    created: 1612551505023
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600966208057
+    modified: 1612551510548
+    name: sales
+    parentId: fld_e90591692afd4a998d60bb70305ec05a
+    _type: request_group
+  - _id: req_a756582a3c10400abd795b8811bfc445
+    authentication: {}
+    body: {}
+    created: 1612555701146
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609778999604.125
+    method: GET
+    modified: 1615314243864
+    name: list-details
+    parameters:
+      - description: ""
+        disabled: true
+        id: pair_fed033eacad14958abe9a47d4e10034a
+        name: saleId
+        value: f00cb72df32499469ff0417dc4c874b5
+      - description: ""
+        disabled: true
+        id: pair_de093a49729d498da2e9c011222606a9
+        name: saleId
+        value: 8bdb4dbceac367c9873d7502e4cf9fc6
+      - description: ""
+        disabled: true
+        id: pair_1514d089b9c643238e2d0e0b0c803dfa
+        name: saleId
+        value: 07bdc60cee1061f4bd1a2fb063e3f9b2
+      - description: ""
+        id: pair_2835dc17dec54c5688053c820a6511c1
+        name: saleId
+        value: 9abe7ef09c7d32f3614b1c32b65134a1
+    parentId: fld_27d0e33927544e11823ae060d4760943
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/sales/list-details"
+    _type: request
+  - _id: req_07cc632bb47048d59151322240cf9880
+    authentication: {}
+    body: {}
+    created: 1612805600076
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609735915013.3125
+    method: GET
+    modified: 1612807413497
+    name: list-customers
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_02f4383dfb55463bb557d8d0669b123d
+        name: term
+        value: trinas
+      - description: ""
+        disabled: true
+        id: pair_9feb792b734a4e25b76fde2cd72028c4
+        name: term
+        value: "93527934391"
+    parentId: fld_27d0e33927544e11823ae060d4760943
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/sales/list-customers"
+    _type: request
+  - _id: req_579fa1ab0b6e4641814d2128f16abcd0
+    authentication: {}
+    body: {}
+    created: 1612801364599
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609822084194.9375
+    method: POST
+    modified: 1613006011099
+    name: list
+    parameters:
+      - description: ""
+        disabled: true
+        id: pair_d6cb4a945e0d47e2b60105fad0ec7fa4
+        name: customerId
+        value: 9f037a52-b373-4f65-ac60-4b4e028716dd
+      - description: ""
+        disabled: true
+        id: pair_41b5b4fe3fb14002b630fd01aaf2d238
+        name: offset
+        value: "60"
+      - description: ""
+        disabled: false
+        id: pair_90a4ee3d973d4e03b535f0ec938b68ba
+        name: balanceType
+        value: gt
+    parentId: fld_6fe12fa9281e4b0c8b18cd213cf99bf9
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/customer-credits/list"
+    _type: request
+  - _id: fld_6fe12fa9281e4b0c8b18cd213cf99bf9
+    created: 1612801344351
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600966208007
+    modified: 1612801350890
+    name: customer-credits
+    parentId: fld_e90591692afd4a998d60bb70305ec05a
+    _type: request_group
+  - _id: req_8a22f29c98444a07bea19eb2a3ad53f0
+    authentication: {}
+    body: {}
+    created: 1612802645843
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609822084144.9375
+    method: GET
+    modified: 1615979942180
+    name: list-details
+    parameters:
+      - description: ""
+        disabled: false
+        id: pair_02f4383dfb55463bb557d8d0669b123d
+        name: customerId
+        value: 9f037a52-b373-4f65-ac60-4b4e028716dd
+    parentId: fld_6fe12fa9281e4b0c8b18cd213cf99bf9
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/customer-credits/list-details"
+    _type: request
+  - _id: req_518ed2e84e084b7995a83d37e06e7d93
+    authentication: {}
+    body: {}
+    created: 1612805756295
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609822084094.9375
+    method: GET
+    modified: 1612805767432
+    name: list-customers
+    parameters:
+      - description: ""
+        disabled: true
+        id: pair_02f4383dfb55463bb557d8d0669b123d
+        name: term
+        value: trinas
+      - description: ""
+        disabled: true
+        id: pair_9feb792b734a4e25b76fde2cd72028c4
+        name: term
+        value: "93527934391"
+    parentId: fld_6fe12fa9281e4b0c8b18cd213cf99bf9
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/customer-credits/list-customers"
+    _type: request
+  - _id: req_66f74dc387f843feafe8cd76319021af
+    authentication: {}
+    body: {}
+    created: 1615978551205
+    description: ""
+    headers:
+      - description: ""
+        id: pair_5ec88cbbd58149c3b90e782da37f1bca
+        name: Authorization
+        value: "{{ token }}"
+    isPrivate: false
+    metaSortKey: -1609800541849.5312
+    method: GET
+    modified: 1615978957891
+    name: load
+    parameters:
+      - description: ""
+        id: pair_64947f6e8b094070902712bfb1e8612e
+        name: id
+        value: 0ad624c5f2113a7bea97f543f14fc1bd
+    parentId: fld_7be9301b666140db9e7d6f6d3dfa13b0
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ url_server }}/account-configs/load"
+    _type: request
+  - _id: fld_7be9301b666140db9e7d6f6d3dfa13b0
+    created: 1615978518967
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1600966207957
+    modified: 1615978540995
+    name: accounting-configs
+    parentId: fld_e90591692afd4a998d60bb70305ec05a
+    _type: request_group
+  - _id: env_92909eab0188689c97cd9e4d33bbeb3a86352726
+    color: null
+    created: 1600966162453
+    data: {}
+    dataPropertyOrder: null
+    isPrivate: false
+    metaSortKey: 1600966162454
+    modified: 1600966162453
+    name: Base Environment
+    parentId: wrk_2be8bc08eef145479bec05d45a4a19f2
+    _type: environment
+  - _id: jar_92909eab0188689c97cd9e4d33bbeb3a86352726
+    cookies: []
+    created: 1600966162512
+    modified: 1600966162512
+    name: Default Jar
+    parentId: wrk_2be8bc08eef145479bec05d45a4a19f2
+    _type: cookie_jar
+  - _id: spc_33e692ca8ccc4048ad915c51312151a3
+    contentType: yaml
+    contents: ""
+    created: 1600966162254
+    fileName: sep-skill
+    modified: 1600966162254
+    parentId: wrk_2be8bc08eef145479bec05d45a4a19f2
+    _type: api_spec
+  - _id: env_1c6ef18afdcf4bfc95829edfc8f14a81
+    color: null
+    created: 1600966174764
+    data:
+      hom_vindi_api_key: _hKzLqWtwP37wtWn8GhRHYp3GkeIXVq-4OUhaWCqF5c
+      license_solution_token: YXBpcGFsbWVpcmFzQGxpY2Vuc2Vzb2x1dGlvbnMuY29tLmJyOjY0M2RiN2JhMmU2MDBjNzhjNjU1NTlhZjE1MTYyMjc4
+      prd_vindi_api_key: 6OH2JFjWcG_6lom1xmaF45bf613qab_QXyDWTlshg8Q
+      token: Bearer
+        eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiYWNjb3VudElkIjoxLCJhY2NvdW50VHlwZSI6InN5c3RlbSIsInByb2ZpbGVJZCI6MSwicGVybWlzc2lvbnMiOiJBMDErVztBMDIrVztBMDM7QTA0O0EwNTtBMDY7QTA3O0EwODtBMDk7QTEwK1c7QTExK1c7QTEyK1c7QTEzK1c7QTE0K1c7QTE1K1c7QTE2K1c7QTE3K1c7QTE4K0MsUztBMTkrVztBMjArVztBMjEiLCJ0YWdzIjpbInNlcCIsImF2YW50aSIsImJpbGhldGVyaWEiLCJtdWx0aWNsdWJlcyIsImxpY2VuY2lhbWVudG8iXSwiaXNTeXN0ZW0iOnRydWUsImlzU3VwcGxpZXIiOmZhbHNlLCJpYXQiOjE2MTY3NjM0MzQsImV4cCI6MTYxNjgwNjYzNH0.XvLxhwgk8wnRoagDsuT5GMCFRULZRVj6GP_-VXCtgpc
+      url_jobs: http://localhost:9995/jobs
+      url_server: http://localhost:7000
+    dataPropertyOrder:
+      "&":
+        - url_server
+        - url_jobs
+        - prd_vindi_api_key
+        - hom_vindi_api_key
+        - license_solution_token
+        - token
+    isPrivate: false
+    metaSortKey: 1600966174764
+    modified: 1616763445193
+    name: dev
+    parentId: env_92909eab0188689c97cd9e4d33bbeb3a86352726
+    _type: environment
+  - _id: env_afa2b7c4381f48f4a68c5ac101e0d6b8
+    color: null
+    created: 1601668315658
+    data:
+      url_jobs: http://localhost:9996/jobs
+      url_server: http://localhost:9997/api
+    dataPropertyOrder:
+      "&":
+        - url_server
+        - url_jobs
+    isPrivate: false
+    metaSortKey: 1601668315658
+    modified: 1601668327010
+    name: test
+    parentId: env_92909eab0188689c97cd9e4d33bbeb3a86352726
+    _type: environment
+  - _id: env_f9bb8bfb74624dd48bb3e8e70953191c
+    color: null
+    created: 1610460647320
+    data:
+      token: Bearer
+        eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiYWNjb3VudElkIjoxLCJhY2NvdW50VHlwZSI6InN5c3RlbSIsInByb2ZpbGVJZCI6MSwicGVybWlzc2lvbnMiOiJBMDErVztBMDIrVztBMDM7QTA0O0EwNTtBMDY7QTA3O0EwODtBMDk7QTEwK1c7QTExK1c7QTEyK1c7QTEzK1c7QTE0K1c7QTE1K1c7QTE2K1c7QTE3K1c7QTE4K0MsUztBMTkrVztBMjArVztBMjEiLCJ0YWdzIjpbInNlcCIsImF2YW50aSIsImJpbGhldGVyaWEiLCJtdWx0aWNsdWJlcyIsImxpY2VuY2lhbWVudG8iXSwiaXNTeXN0ZW0iOnRydWUsImlzU3VwcGxpZXIiOmZhbHNlLCJpYXQiOjE2MTg0MDgyOTIsImV4cCI6MTYxODQ1MTQ5Mn0.l_M3SIiBTQmoIYeWWZdh19FjqPjkuEIzUvMo_wyzNEQ
+      url_server: https://portalsep.palmeiras.com.br/api
+    dataPropertyOrder:
+      "&":
+        - url_server
+        - token
+    isPrivate: false
+    metaSortKey: 1610460647320
+    modified: 1618408303456
+    name: prd
+    parentId: env_92909eab0188689c97cd9e4d33bbeb3a86352726
+    _type: environment

@@ -1,0 +1,93 @@
+@startuml
+!theme plain
+skinparam linetype ortho
+skinparam backgroundColor white
+skinparam class {
+    BackgroundColor PaleGreen
+    ArrowColor Black
+    BorderColor Gray
+}
+
+title Esquema do Banco de Dados - Sistema Incanto
+
+package "MongoDB Collections" {
+    class cielo_transacoes {
+        + tipo_registro: String
+        + numero_pv: String
+        + numero_documento: String
+        + data_lancamento: Date
+        + data_movimento: Date
+        + tipo_lancamento: String
+        + valor_lancamento: Number
+        + bandeira: String
+        + forma_pagamento: String
+        + numero_parcela: Number
+        + total_parcelas: Number
+        + numero_cartao: String
+        + codigo_autorizacao: String
+        + nsu: String
+        + valor_bruto: Number
+        + valor_taxa: Number
+        + valor_liquido: Number
+        + status_processamento: String
+        + motivo_rejeicao: String
+        + chave_ur: String
+    }
+
+    class cielo_pagamentos {
+        + tipo_registro: String
+        + numero_pv: String
+        + nsu: String
+        + data_lancamento: Date
+        + valor_total: Number
+        + valor_parcela: Number
+        + pagamento_parcial: Boolean
+        + data_prevista_pagamento: Date
+        + banco: String
+        + agencia: String
+        + conta: String
+        + status_pagamento: String
+        + motivo_rejeicao_pagamento: String
+        + chave_ur: String
+    }
+}
+
+package "PostgreSQL Tables" {
+    class users {
+        + id: Serial
+        + name: VARCHAR(255)
+        + email: VARCHAR(255)
+        + password_hash: VARCHAR(255)
+        + role: VARCHAR(50)
+        + active: BOOLEAN
+        + created_at: TIMESTAMP
+        + updated_at: TIMESTAMP
+    }
+
+    class configurations {
+        + id: Serial
+        + key: VARCHAR(100)
+        + value: TEXT
+        + description: TEXT
+        + created_at: TIMESTAMP
+        + updated_at: TIMESTAMP
+    }
+
+    class audit_logs {
+        + id: Serial
+        + user_id: INTEGER
+        + action: VARCHAR(100)
+        + entity: VARCHAR(100)
+        + entity_id: VARCHAR(100)
+        + details: JSONB
+        + ip_address: VARCHAR(45)
+        + created_at: TIMESTAMP
+    }
+}
+
+' Relacionamentos
+cielo_transacoes "1" -- "1..*" cielo_pagamentos : referencia
+users "1" -- "0..*" audit_logs : registra
+configurations "0..*" -- "1" users : configura
+
+@enduml

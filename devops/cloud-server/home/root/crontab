@@ -1,0 +1,1 @@
+05,15,25,35,45,55 * * * * /opt/inbox-files.sh 2>&1 /var/log/inbox-files.log

@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+dist/
+
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+.env.*.local
+
+lancamentos*.json
+transactions*.json
+rejections*.json

@@ -1,0 +1,2 @@
+01 01 * * * root /bin/bash /opt/backup.sh >> /var/log/cronjob.log
+01 04 * * * root /bin/bash /opt/bkp-rotate.sh >> /var/log/bkp-rotate.log
